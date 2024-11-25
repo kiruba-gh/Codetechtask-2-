@@ -1,0 +1,121 @@
+CODTECH IT (Grade Calculator)
+Name : KIRUBAKARAN SD 
+Company : CodTech IT Solutions 
+ID : CT12DS2656
+Domain : Java Development 
+Duration : September 2024 - November 2024 
+
+
+Overview of the Project : 
+
+Project : GRADE CALCULATOR
+
+Objective : Develop a command-line based calculator in Java that performs basic arithmetic operations, including addition, subtraction, multiplication, and division.
+
+
+Technologies used : 
+
+1. Java Programming Language: The core language for writing the calculator application.
+
+2. Java Development Kit (JDK): The environment needed to compile and run Java applications.
+
+3. Integrated Development Environment (IDE): Optional tools like IntelliJ IDEA, Eclipse, or NetBeans for coding, debugging, and managing the project.
+
+4. Standard Input/Output (I/O): Using Scanner for user input and System.out for output to the console.
+
+5. Basic Control Structures: Utilizing conditionals (if, switch) and loops (while, for) for program flow control.
+
+6. Exception Handling: Managing errors using try-catch blocks, especially for invalid number formats or division by zero.
+
+Conclusion : 
+
+This project will help you practice fundamental Java concepts, such as input handling, This Java program, `StudentGradeTracker`, is designed to allow users to enter numerical grades for a student, calculate the average of those grades, and convert the average into a letter grade based on standard grading scales. Here's a step-by-step explanation of the program:
+
+---
+
+### **Key Components:**
+
+1. **Attributes:**
+   - `List<Double> grades`: A list to store the grades entered by the user.
+
+2. **Constructor:**
+   - `StudentGradeTracker()`: Initializes the `grades` list.
+
+3. **Methods:**
+   - **`addGrade(double grade)`**: Adds a valid numerical grade (0–100) to the `grades` list.
+   - **`calculateAverage()`**: 
+     - Calculates the average of all grades in the `grades` list.
+     - If no grades are entered, the method returns `0` to avoid division by zero.
+   - **`getLetterGrade(double average)`**:
+     - Maps a numerical average to a letter grade:
+       - A: 90–100
+       - B: 80–89
+       - C: 70–79
+       - D: 60–69
+       - F: below 60
+
+4. **Main Method:**
+   - Handles user interaction and orchestrates the functionality of the program.
+
+---
+
+### **Program Workflow:**
+
+1. **Initialization:**
+   - A `StudentGradeTracker` object is created.
+   - A `Scanner` object is used to read user input from the console.
+
+2. **User Input Loop:**
+   - The program repeatedly prompts the user to enter a grade (or type "done" to finish).
+   - If a numeric value is entered:
+     - The program checks if the value is within the range 0–100. If valid, it adds the grade to the tracker. Otherwise, it displays an error message.
+   - If the input is not a number or "done", the program notifies the user of invalid input.
+
+3. **Calculating Results:**
+   - Once the user types "done," the program calculates:
+     - The average of the grades using `calculateAverage()`.
+     - The corresponding letter grade using `getLetterGrade()`.
+
+4. **Output:**
+   - The program displays:
+     - The average grade (formatted to 2 decimal places).
+     - The corresponding letter grade.
+
+5. **Exit:**
+   - The scanner is closed, and the program terminates.
+
+---
+
+### **Sample Execution:**
+```plaintext
+Welcome to the Student Grade Tracker!
+Enter a grade (0-100) or type 'done' to finish: 85
+Grade added: 85.0
+Enter a grade (0-100) or type 'done' to finish: 92
+Grade added: 92.0
+Enter a grade (0-100) or type 'done' to finish: 76
+Grade added: 76.0
+Enter a grade (0-100) or type 'done' to finish: done
+Average Grade: 84.33
+Letter Grade: B
+```
+
+---
+
+### **Program Features:**
+1. **Error Handling:**
+   - Ensures non-numeric or out-of-range inputs are handled gracefully.
+2. **Flexible Input:**
+   - Allows users to input grades until they type "done."
+3. **Modular Design:**
+   - Methods are logically separated for adding grades, calculating averages, and determining letter grades.
+4. **User-Friendly Output:**
+   - The results are clearly presented with proper formatting.
+
+---
+
+### **Potential Enhancements:**
+1. Add a feature to display all entered grades.
+2. Allow updating or removing grades.
+3. Introduce support for weighted grades.
+4. Improve input validation with regex for more robust handling.
